@@ -4,9 +4,20 @@
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
       </button>
-      <span class="title">Estudos do Angular</span>
+      <span class="title" [routerLink]="['/']">Estudos do Angular</span>
       <span class="spacer"></span>
       <div fxShow="true" fxHide.lt-md="true">
+        <button mat-button [matMenuTriggerFor]="subjects">Assuntos</button>
+
+        <mat-menu #subjects="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="forms">Formulários</button>
+        </mat-menu>
+
+        <mat-menu #forms="matMenu">
+          <button mat-menu-item [routerLink]="['/templateDriven']">Templete Driven</button>
+          <button mat-menu-item [routerLink]="['/reactFrom']">React Form</button>
+        </mat-menu>
+
         <a href="https://github.com/RenatoValentim" target="_blanck" mat-button>
           <img class="iconGithub" src="../assets/icon/git-white.svg" alt="Logo do Github">
           Github
@@ -18,6 +29,20 @@
   <mat-sidenav-container fxFlexFill>
     <mat-sidenav #sidenav>
       <mat-nav-list>
+        <mat-expansion-panel [class.mat-elevation-z0]="true" dense>
+          <mat-expansion-panel-header>
+            Formulários
+          </mat-expansion-panel-header>
+          <mat-nav-list dense>
+            <a class="templateDriven" mat-list-item [routerLink]="['/templateDriven']">
+              Templete Driven
+            </a>
+            <a class="reactFrom" mat-list-item [routerLink]="['/reactFrom']">
+              React Form
+            </a>
+          </mat-nav-list>
+        </mat-expansion-panel>
+
         <a href="https://github.com/RenatoValentim" target="_blanck" mat-list-item>
           <img class="iconGithub" src="../assets/icon/git-black.svg" alt="Logo do Github">
           Github
