@@ -1,4 +1,4 @@
-.mat-elevation-z2 {
+.mat-elevation-z1 {
   max-width: 1000px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -6,3 +6,47 @@
   margin-right: 10%;
   padding: 20px;
   }
+
+  .title {
+    color: gray;
+    font-size: x-large;
+  }
+
+  @media (max-width: 400px) {
+    .title {
+      margin-left: 40px;
+      font-size: large;
+     }
+  }
+
+  @media (max-width: 360px) {
+    .title {
+      display: none;
+     }
+  }
+
+  .form-field {
+    width: 100%;
+  }
+
+  .save {
+    margin-bottom: 25px;
+  }
+
+  .filter {
+    margin-top: 20px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  td, th {
+    width: 25%;
+  }
+
