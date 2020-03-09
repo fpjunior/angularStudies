@@ -26,7 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
- ## Links Uteis
+ ## Useful links
     <a href="https://www.npmjs.com/package/json-server">Json Server </a><br>
      <a href="https://getbootstrap.com/">BootStrap </a><br>
       <a href="https://loiane.com//">Loiane </a><br>
